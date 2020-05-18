@@ -34,9 +34,10 @@
 
 
 /* 1. Theme default css */
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700,900');
  body {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Fira Sans';
 	font-weight: normal;
 	font-style: normal;
 	font-size: 16px;
@@ -94,7 +95,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto Slab';
 	font-weight: normal;
 	color: #152136;
 	margin-top: 0px;
@@ -546,7 +547,7 @@ label {
 }
 /* 4. features */
 .single-features {
-	padding: 70px 50px;
+	padding: 35px 25px;
 	background: transparent;
 	transition: .5s;
 }
@@ -619,12 +620,11 @@ label {
 	display: block;
 }
 .section-title h2 {
-	font-size: 60px;
+	font-size: 40px;
 	font-weight: 500;
 	letter-spacing: -.9px;
 	line-height: 1.1;
 	margin-bottom: 0;
-	/* text-transform: capitalize; */
 }
 .about-content{margin-bottom: 35px;}
 .about-content p {
@@ -1409,7 +1409,7 @@ label {
 }
 /* 11. faq */
 .faq-img {
-	margin-left: -250px;
+	margin-left: -150px;
 }
 .faq-wrapper .card {
 	margin-bottom: 20px;
@@ -1431,7 +1431,7 @@ label {
 	top: 25px;
 	right: 50px;
 	font-size: 12px;
-	font-family: "Font Awesome 5 Free";
+	font-family: "Roboto Slab";
 	font-weight: 700;
 	color: #152136;
 }
@@ -1502,7 +1502,7 @@ label {
 	top: 31px;
 	left: 50px;
 	font-size: 16px;
-	font-family: "Font Awesome 5 Free";
+	font-family: "Fira Sans";
 	font-weight: 700;
 	color: #152136;
 }
@@ -2249,7 +2249,7 @@ label {
 }
 .widget__banner-overly h3 span {
 	display: block;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto Slab';
 	font-size: 30px;
 	font-weight: 300;
 }
@@ -3422,8 +3422,8 @@ search form
     line-height: 1;
 }
 .section-ptb {
-	padding-top: 80px;
-	padding-bottom: 80px;
+	padding-top: 40px;
+	padding-bottom: 40px;
 }
 .section-ptb-2 {
 	padding-top: 130px;
@@ -3432,8 +3432,8 @@ search form
 
 @media only screen and (max-width: 991px){
 .section-ptb {
-	padding-top: 80px;
-	padding-bottom: 80px;
+	padding-top: 40px;
+	padding-bottom: 40px;
 }
 .section-ptb-2 {
 	padding-top: 90px;
