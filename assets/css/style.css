@@ -1378,10 +1378,10 @@ label {
 }
 .s-cta-icon {
 	display: inline-block;
-	height: 160px;
-	width: 160px;
+	height: 100px;
+	width: 100px;
 	background: #fff;
-	line-height: 160px;
+	line-height: 100px;
 	border-radius: 50%;
 	border: 8px solid #606BF1;
 	box-shadow: 0px 16px 32px 0px rgba(255, 74, 87, 0.2);
@@ -1427,11 +1427,11 @@ label {
 }
 .faq-wrapper .card-header h2 button::after {
 	position: absolute;
-	content: "\f068";
+	content: "\f700";
 	top: 25px;
 	right: 50px;
 	font-size: 12px;
-	font-family: "Roboto Slab";
+	font-family: "Font Awesome 5 Free";
 	font-weight: 700;
 	color: #152136;
 }
@@ -1502,7 +1502,7 @@ label {
 	top: 31px;
 	left: 50px;
 	font-size: 16px;
-	font-family: "Fira Sans";
+	font-family: "Font Awesome 5 Free";
 	font-weight: 700;
 	color: #152136;
 }
@@ -3450,4 +3450,8 @@ search form
 	padding-top: 50px;
 	padding-bottom: 50px;
   }
+}
+
+.copyright p {
+	font-size: 14px;
 }
