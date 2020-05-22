@@ -1427,7 +1427,7 @@ label {
 }
 .faq-wrapper .card-header h2 button::after {
 	position: absolute;
-	content: "\f700";
+	content: "\f068";
 	top: 25px;
 	right: 50px;
 	font-size: 12px;
