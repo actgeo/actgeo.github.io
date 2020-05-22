@@ -310,50 +310,11 @@ $('.popup-video').magnificPopup({
 	type: 'iframe'
 });
 
-// progress
-
-$(function () {
-	$('.chart').easyPieChart({
-		size: 235,
-		barColor: '#fff',
-		scaleColor: false,
-		lineWidth: 5,
-		trackColor: '#ff6e79'
-	});
-});
-
-
 // counterUp
-
 $('.counter').counterUp({
 	delay: 10,
 	time: 1000
 });
-
-// isotope
-$('.portfolio-active').imagesLoaded(function () {
-	var $grid = $('.portfolio-active').isotope({
-		itemSelector: '.grid-item',
-		percentPosition: true,
-		masonry: {
-			columnWidth: 1
-		}
-	})
-
-	// filter items on button click
-	$('.portfolio-menu').on('click', 'button', function () {
-		var filterValue = $(this).attr('data-filter');
-		$grid.isotope({ filter: filterValue });
-	});
-	//for menu active class
-	$('.portfolio-menu button').on('click', function (event) {
-		$(this).siblings('.active').removeClass('active');
-		$(this).addClass('active');
-		event.preventDefault();
-	});
-
-});
-
 
 // scrollToTop
 $.scrollUp({
@@ -371,7 +332,7 @@ $.scrollUp({
 new WOW().init();
 
 // niceSelect;
-$("select").niceSelect();
+//$("select").niceSelect();
 
 //* Parallaxmouse js
 function parallaxMouse() {
@@ -411,27 +372,6 @@ if($(".rellax").length >0) {
      enabled:true
     }
   });
-
-
-var sjs = SimpleJekyllSearch({
-  searchInput: document.getElementById('search-input'),
-  resultsContainer: document.getElementById('results-container'),
-  json: '/search.json'
-});
-
-var macy = Macy({
-    container: '.macy-container',
-    trueOrder: false,
-    waitForImages: false,
-    margin: 24,
-    columns: 3,
-    breakAt: {
-        1200: 3,
-        991: 2,
-        520: 2,
-        400: 1
-    }
-});
 
 
 })(jQuery);
