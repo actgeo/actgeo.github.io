@@ -579,13 +579,13 @@
 	padding-top: 40px;
 }
 .slider-content {
-	padding-top: 170px;
+	padding-top: 100px;
 }
 .slider-bg {
 	min-height: 605px;
 }
 .slider-active .slick-track {
-	padding: 20px 0;
+	padding: 40px 0;
 }
 .b-features-img img {
 	width: 100%;
@@ -603,7 +603,7 @@
 }
 .about-img img{width: 100%;}
 .about-lg-p {
-	padding: 140px 0;
+	padding: 40px 0;
 }
 .join-md-p {
 	padding-top: 133px;
@@ -624,8 +624,8 @@
 }
 .promotion-img img{width: 100%;}
 .promotion-area.theme-bg {
-	padding-top: 140px;
-	padding-bottom: 140px;
+	padding-top: 40px;
+	padding-bottom: 40px;
 }
 .promotion-content p {
 	margin-bottom: 0;
@@ -638,8 +638,8 @@
 	margin: 0;
 }
 .services-area.fix.theme-bg {
-	padding-top: 133px;
-	padding-bottom: 140px;
+	padding-top: 40px;
+	padding-bottom: 40px;
 }
 .single-services {
 	margin-bottom: 50px;
@@ -1174,7 +1174,15 @@
 .second-team-area {
 	padding-top: 305px;
 }
+.faq-content {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
 
+.single-cta {
+	padding-bottom: 40px;
+	margin-bottom: 40px;
+}
 
 }
 
@@ -1453,6 +1461,10 @@
 }
 .second-team-area {
 	padding-top: 335px;
+}
+
+.faq-content {
+	padding-top: 40px;
 }
 
 }
