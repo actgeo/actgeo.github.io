@@ -596,6 +596,9 @@
 .features-lg-p {
 	padding-top: 105px;
 }
+.about-romada .row {
+  flex-direction: column-reverse;
+}
 .about-img {
 	margin-left: 0;
 	text-align: center;
@@ -637,6 +640,12 @@
 .single-team {
 	margin: 0;
 }
+.second-cta .section-title {
+	padding-bottom: 40px;
+}
+.services-area .row {
+	flex-direction: column-reverse;
+}
 .services-area.fix.theme-bg {
 	padding-top: 40px;
 	padding-bottom: 40px;
@@ -646,6 +655,7 @@
 }
 .services-img img {
 	width: 100%;
+	padding-bottom: 30px; 
 }
 .b-features-img {
 	margin-left: 0;
