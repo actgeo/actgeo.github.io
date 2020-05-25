@@ -5,37 +5,20 @@
   $(window).on("load", function () {
     $("#loading").fadeOut(500);
 
-    function sendData() {
-      const XHR = new XMLHttpRequest();
+    document.forms['mc-embedded-subscribe-form'].addEventListener('submit', (event) => {
+			event.preventDefault();
+			fetch(event.target.action, {
+					method: 'POST',
+					body: new URLSearchParams(new FormData(event.target)) // event.target is the form
+			}).then((resp) => {
+					return resp.json(); // or resp.text() or whatever the server sends
+			}).then((body) => {
+					console.log(body);
+			}).catch((error) => {
+				console.log(error);
+			});
+		});
 
-      // Bind the FormData object and the form element
-      const FD = new FormData(form);
-
-      // Define what happens on successful data submission
-      XHR.addEventListener("load", function (event) {
-        alert(event.target.responseText);
-      });
-
-      // Define what happens in case of error
-      XHR.addEventListener("error", function (event) {
-        alert("Oops! Something went wrong.");
-      });
-
-      // Set up our request
-      XHR.open("POST", "https://actgeo.us18.list-manage.com/subscribe/post?u=a4ca3caed47aa865cccbbe373&amp;id=f8bede61ae&c=?");
-
-      // The data sent is what the user provided in the form
-      XHR.send(FD);
-    }
-
-    // Access the form element...
-    const form = document.getElementById("mc-embedded-subscribe-form");
-
-    // ...and take over its submit event.
-    form.addEventListener("submit", function (event) {
-      event.preventDefault();
-      sendData();
-    });
   });
 
   // meanmenu
