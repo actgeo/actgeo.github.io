@@ -4,21 +4,6 @@
   // preloader
   $(window).on("load", function () {
     $("#loading").fadeOut(500);
-
-    document.forms['mc-embedded-subscribe-form'].addEventListener('submit', (event) => {
-			event.preventDefault();
-			fetch(event.target.action, {
-					method: 'POST',
-					body: new URLSearchParams(new FormData(event.target)) // event.target is the form
-			}).then((resp) => {
-					return resp.json(); // or resp.text() or whatever the server sends
-			}).then((body) => {
-					console.log(body);
-			}).catch((error) => {
-				console.log(error);
-			});
-		});
-
   });
 
   // meanmenu
@@ -337,6 +322,7 @@
   });
 
   // counterUp
+
   $(".counter").counterUp({
     delay: 10,
     time: 1000,
@@ -400,8 +386,4 @@
       enabled: true,
     },
   });
-
-  function subscribeToMailChimp() {
-    var mailAddress = document.getElementById("mce-EMAIL");
-  }
 })(jQuery);
