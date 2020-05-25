@@ -22,7 +22,7 @@
       });
 
       // Set up our request
-      XHR.open("POST", "https://actgeo.us18.list-manage.com/subscribe/post?u=a4ca3caed47aa865cccbbe373&amp;id=f8bede61ae");
+      XHR.open("POST", "https://actgeo.us18.list-manage.com/subscribe/post?u=a4ca3caed47aa865cccbbe373&amp;id=f8bede61ae&c=?");
 
       // The data sent is what the user provided in the form
       XHR.send(FD);
